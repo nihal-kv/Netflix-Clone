@@ -1,0 +1,44 @@
+.row{
+    margin-left: 20px;
+}
+
+.row__title{
+    color: white;
+}
+.movies__container{
+    
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* flex-wrap: nowrap; */
+    padding: 20px;
+    
+}
+.movies__container::-webkit-scrollbar{
+    display: none;
+}
+
+.movie__image{
+    max-height: 150px;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+.movie__largeImage{
+    max-height: 250px;
+}
+
+.movie__image:hover{
+    transform: scale(1.08);
+}
+.movie__largeImage:hover{
+    transform: scale(1.09);
+}
+
+
+@media (max-width: 550px)
+{
+    .movie__image{
+        max-width: 150px;
+    }
+}
